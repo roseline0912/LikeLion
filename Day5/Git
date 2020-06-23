@@ -6,7 +6,9 @@
 //(git remote add origin https://github.com/roseline0912/LikeLion.git) 생략가능
 //$ git push origin master
 
+//git push -u origin master
 
+//바꿔
 
 
 //AWS cloud9의 python bash창에서 다음을 친다.
@@ -37,9 +39,23 @@
 
 //$ git remote add origin https://github.com/roseline0912/LikeLion.git      //주소로 연결
 //$ git remote -v
-//$  git push origin master
+//$  git push origin master //올리기!!
     //Username for 'https://github.com/roseline0912/LikeLion.git': roseline0912
     //Password for 'https://roseline0912@github.com/roseline0912/LikeLion.git': 
+//$ git pull origin master //내려받기!!
+
+
+//$ git clone <복사된 url>
+
+
+//UI로는 하면 안되나? ㅜ너무 어렵
+
+//log 치다가 bash 맛이 갔다. 창 닫았다가 열어야 하나?
 
 
 
+//ctrl+C
+//ctrl+z
+//ctrl+d
+//q
+//exit quit
