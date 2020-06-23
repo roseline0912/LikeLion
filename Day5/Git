@@ -1,5 +1,15 @@
-//python bash창에서 다음을 친다.
+//최종 순서
+//$ git init
+//변경하기
+//$ git add .
+//$ git commit -m "save"
+//(git remote add origin https://github.com/roseline0912/LikeLion.git) 생략가능
+//$ git push origin master
 
+
+
+
+//AWS cloud9의 python bash창에서 다음을 친다.
 //$ git init    //git 시작. 
 
                 //git이랑 github랑은 다름.
@@ -28,4 +38,6 @@
 //$  git push origin master
     //Username for 'https://github.com/roseline0912/LikeLion.git': roseline0912
     //Password for 'https://roseline0912@github.com/roseline0912/LikeLion.git': 
+
+
 
