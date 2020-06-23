@@ -33,6 +33,8 @@
 
 //$ git config --global.name "miseon-jang"
 //$ git config --global user.email "roseline0912@likelion.org"
+//$ git config --list
+
 //$ git remote add origin https://github.com/roseline0912/LikeLion.git      //주소로 연결
 //$ git remote -v
 //$  git push origin master
