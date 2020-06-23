@@ -1,0 +1,128 @@
+body{
+    background-color:black;
+    color:white;
+    margin:0;
+}
+
+.nav-global{
+    display:flex;
+    background-color:#202020;
+    padding:15px;
+}
+
+.nav-search{
+    flex:1;   /*다른 태그들이 차지하는 공간을 제외하고 모든 공간을 차지함.*/
+    /*border:2px solid dimgray;*/
+    margin: 0 50px;
+    text-align:center;
+}
+
+.nav-item, nav-logo{
+    /*border:1px solid dimgray;*/
+}
+
+.nav-item{
+    margin:0 10px;
+}
+
+.nav-logo{
+    width:100px;
+}
+
+.nav-profile{
+    width:30px;
+    height:30px;
+    border-radius:50%; /*일반적으로 원을 만들때는 정사각형을 만들고 radius 50%를 사용합니다.*/
+    background-color:skyblue;
+    overflow:hidden; /*얘는 우리가 정해놓은 사이즈를 내부 내용이 넘어가면 숨기겠다라는 속성입니다. 이 외에도 scroll도있습니다*/
+}
+
+.container{
+    display:flex;
+    /*flex-direction: row;*/
+    /*justify-content: space-around;*/
+    
+}
+.container .left-section{
+    /*border: 2px solid blue;*/
+    display: inline-block;
+    /*width: 28%;*/
+    min-height:600px;
+    flex:6;
+}
+
+.container .right-section{
+    float: right;
+    flex:4;
+    
+    height:600px;
+    overflow-y: scroll;
+}
+
+.video-area{
+    height:500px;
+    background-color:grey;
+}
+
+.video-title{
+    /*border:2px solid red;*/
+    padding:10px;
+    font-weight:bold;
+    font-size:1.5rem;
+}
+
+.video-info{
+    /*border:2px solid green;*/
+    color:#ccc;     /* viedo_info클래스 밑에 있는 클래스들은 모두 글자색이 회색이므로
+                    상위 클래스에 속성을 부여해 하위 클래스까지 영향을 주도록했습니다.*/
+
+    display: flex;   /*이렇게 작성을 해주면 하위 div가 block이지만 우리들 마음대로 다루기 편해집니다.*/
+    
+    position: relative; /*기준점이 videoinfo박스(초록색박스)가 되므로 relative설정을 해줍니다.*/
+}
+
+.view-viewcount{
+    /*border:2px solid yellow;*/
+}
+
+.video-info_btn_container{
+    /*border: 2px solid pink;*/
+    display: flex;
+    
+    position: absolute; /*btn container를 info box기준으로 오른쪽에 위치시키기위해 absolute속성을 이용했습니다.*/
+    right:0;
+    top:0;
+    
+    
+}
+
+.video-info_btn_container div{
+    margin:0 5px;
+    /*border:2px solid yellow;*/
+}
+
+.list-item div {
+    /*border:green 1px solid;  /*임시 border를 만들어서 보기편하게 해줍니다.*/
+    padding:10px;         /*listing되는 item들은 안쪽으로 여백이 있으니 padding값을 줍니다.*/
+}
+.list-thumbnail{
+    height:100px;        /*사진의 높이는 100px정도로 잡고*/
+    width: 40%;          /*넓이를 right_section기준 40%로 잡아줍니다.(반응형을 위해)*/
+    background-color: grey; /*grey 배경색을 깔아주고*/
+    float: left;            /*위에서 사용했던 float속성을 이용해서 썸네일이 왼쪽에 둥 떠있게 해줍니다.*/
+    display: inline-block;  /*그리고 한줄에 여러개의 요소가 들어오므로 inline-block*/
+    margin-right: 10px;     /*썸네일과 오른쪽 정보간의 간격 10px만큼줬습니다.*/
+}
+.list-title{
+    font-weight: bold;    /*제목은 두껍게 처리를 해주었습니다.*/
+    width:55%;            /*그리고 썸네일이 쓰고 남은 section기준 width 60%중에서 여유롭게 55%만 차지하도록 해줍니다.*/
+    display: inline-block;  /*썸에일 오른쪽에 제목이 위치해야 하므로 inline-block*/ 
+
+}
+.list-author{
+    color:#ccc;      /*작성자의 색깔은 회색입니다.*/
+}
+.list-info{
+    font-size:0.8rem;   /*조회수 및 게시일은 작성자보다 조금 작은 0.8배로 크기를 지정했습니다.*/
+    color:#ccc;
+}

@@ -1,0 +1,14 @@
+//python bash창에서 다음을 친다.
+
+//$ git init    //git 시작
+
+//$ ls -al
+
+//$ git status  //변경하면, 빨간글자로 변경사항 보임. 
+                //빨간글자를 클릭해서 바로가기창에서 add해도 됨.
+
+//$ git add .   //모든 변경사항을 저장
+//$ git add word.py        //특정 파일(word.py)에 대한 변경사항을 저장
+
+//$ git config --global user.name "miseon-jang"
+//$ git config --global user.mail "roseline0912@likelion.org"
