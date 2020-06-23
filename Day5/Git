@@ -1,6 +1,14 @@
 //python bash창에서 다음을 친다.
 
-//$ git init    //git 시작
+//$ git init    //git 시작. 
+
+                //git이랑 github랑은 다름.
+
+                //git은 내컴퓨터에서 유일한 name을 가지고 로컬에 저장하는 것.
+                //다른사람이름을 친다고 해서 로그인을 다른 사람걸로 해서 그사람이 저장한 내용을 볼 수 있는 개념이 아니다.
+                //그럼에도 필요한 이유는 버전관리가 되도록 log가 남기 때문.
+                
+                //git hub는 로그인 개념이 있다. commit한 내용을 공유도 할 수 있다.
 
 //$ ls -al
 
@@ -9,6 +17,15 @@
 
 //$ git add .   //모든 변경사항을 저장
 //$ git add word.py        //특정 파일(word.py)에 대한 변경사항을 저장
+//$ git commit -m "<메시지>"  //commit 하기. add랑 commit은 다름. 
+//$ git log
 
-//$ git config --global user.name "miseon-jang"
-//$ git config --global user.mail "roseline0912@likelion.org"
+
+//$ git config --global.name "miseon-jang"
+//$ git config --global user.email "roseline0912@likelion.org"
+//$ git remote add origin https://github.com/roseline0912/LikeLion.git      //주소로 연결
+//$ git remote -v
+//$  git push origin master
+    //Username for 'https://github.com/roseline0912/LikeLion.git': roseline0912
+    //Password for 'https://roseline0912@github.com/roseline0912/LikeLion.git': 
+
