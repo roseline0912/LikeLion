@@ -1,4 +1,4 @@
-//최종 순서
+//----최종 순서----
 //$ git init
 //변경하기
 //$ git add .
@@ -6,12 +6,12 @@
 //(git remote add origin https://github.com/roseline0912/LikeLion.git) 생략가능
 //$ git push origin master
 
+
+//----매번 인터넷 origin 연결할 때마다 아이디,비밀번호 입력안하려면 다음과 같이 한다.
 //git push -u origin master
 
-//바꿔
 
-
-//AWS cloud9의 python bash창에서 다음을 친다.
+//----명령어 모음 (AWS cloud9의 python bash창에서 다음을 친다.)
 //$ git init    //git 시작. 
 
                 //git이랑 github랑은 다름.
@@ -50,10 +50,10 @@
 
 //UI로는 하면 안되나? ㅜ너무 어렵
 
-//log 치다가 bash 맛이 갔다. 창 닫았다가 열어야 하나?
 
 
-
+//----log 치다가 bash 맛이 갔다. 창 닫았다가 열어야 하나?----
+//다음 중 아무거나 치면 보통 나간다.
 //ctrl+C
 //ctrl+z
 //ctrl+d
