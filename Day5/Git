@@ -7,10 +7,19 @@
 //$ git remote -v
 //$ git remote add origin https://github.com/roseline0912/LikeLion.git
 //$ git push origin master
+//**** 만약 바로 위에서 reject 가 떴다면, 다른 사람의 업데이트로 인해서 최신버전이 아닌상태에서 고쳤던 것이기 때문에 pull을 먼저하고 고친 후, push 해야한다.
+//**** 또는 confilct 가 났을 때는 수동으로 고쳐야한다. 코드를 살펴보고 내가 쓴것과 다른 사람이 쓴 것을 비교하여 필요없는 것을 지우던가 아니면 둘다 살리던가 한다.
+
+//-f 는 완전히 새로 덮어써져서, 이전 상황이 리셋되므로 최대한 지양한다.
+//바꿈
+
+
+
 
 
 //----매번 인터넷 origin 연결할 때마다 아이디,비밀번호 입력안하려면 다음과 같이 한다.
-//git push -u origin master
+//git push -u origin master  (또는 (?) git config redentical.helper store)
+//-u: upstream의 줄임말.
 
 
 //----명령어 모음 (AWS cloud9의 python bash창에서 다음을 친다.)
