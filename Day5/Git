@@ -3,7 +3,9 @@
 //변경하기
 //$ git add .
 //$ git commit -m "save"
-//(git remote add origin https://github.com/roseline0912/LikeLion.git) 생략가능
+
+//$ git remote -v
+//$ git remote add origin https://github.com/roseline0912/LikeLion.git
 //$ git push origin master
 
 
