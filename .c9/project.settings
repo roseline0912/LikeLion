@@ -1,4 +1,7 @@
 {
+    "build": {
+        "@saveall": true
+    },
     "instance": {
         "@automaticShutdown": "30"
     },
@@ -23,7 +26,15 @@
     "run": {
         "configs": {
             "@inited": "true",
-            "json()": {}
+            "json()": {
+                "django": {
+                    "command": "/Django/mysite python manage.py runserver 8080",
+                    "env": {},
+                    "name": "django",
+                    "runner": "Shell command",
+                    "toolbar": true
+                }
+            }
         }
     },
     "welcome": {

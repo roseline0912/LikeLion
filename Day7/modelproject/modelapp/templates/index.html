@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css" />
+</head>
+<body>
+    <h1>메인 페이지</h1>
+    
+    <h3>로또번호 생성기</h3>
+    <form>
+        <input type="submit" name="로또" value="번호생성"/>
+    </form>
+    
+    {% if result_lotto %}
+    <h4>결과 : {{result_lotto}}</h4>
+    {% else %}
+    <h4>버튼을 누르세요😘</h4>
+    {% endif %}
+    
+    <hr>
+    <hr>
+    
+    {{all_blog}}
+
+    <hr>
+    <hr>
+    
+    {% for one_blog in all_blog %}
+    <h1>제목 : {{one_blog.title}}</h1>
+    <h1>내용 : {{one_blog.body}}</h1>
+    <h1>날짜 : {{one_blog.created_at}}</h1>
+    
+    <hr>
+    <hr>
+    
+    <h1>제목 : {{one_blog.title}}</h1>
+    <h1>내용 : {{one_blog.body}}</h1>
+    <h1>날짜 : {{one_blog.created_at}}</h1>
+    {% endfor %}
+</body>
+</html>
